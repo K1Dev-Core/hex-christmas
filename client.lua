@@ -1167,7 +1167,7 @@ end)
 Citizen.CreateThread(function()
 	Wait(5000)
 	while true do
-		if NetworkIsPlayerActive(PlayerId()) and LocalPlayer.state.IsInSession	then
+		if NetworkIsPlayerActive(PlayerId()) 	then
 			TriggerServerEvent('christmas:requestSync')
 			break 
 		end
